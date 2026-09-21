@@ -82,12 +82,12 @@ _(completar)_
 
 ## 6. Autoverificación
 
-- [ ] Hay **usuarios reales accesibles** para entrevistar en la Clase 3.
+- [x] Hay **usuarios reales accesibles** para entrevistar en la Clase 3.
 - [ ] El dominio da para **10 requisitos funcionales y 5 no funcionales** sin inventarlos.
-- [ ] Los **tres casos críticos** se ven implementables end-to-end en seis semanas.
-- [ ] El proyecto **no fue desarrollado** en otra asignatura ni se está reciclando.
-- [ ] No es demasiado grande _(una red social completa)_ ni demasiado pequeño _(una calculadora)_.
-- [ ] El sistema **maneja datos personales**: Sí / No. Si es Sí, aplica la Ley 1581 de 2012 en el numeral 10 de la Nota 1.
+- [x] Los **tres casos críticos** se ven implementables end-to-end en seis semanas.
+- [x] El proyecto **no fue desarrollado** en otra asignatura ni se está reciclando.
+- [x] No es demasiado grande _(una red social completa)_ ni demasiado pequeño _(una calculadora)_.
+- [x] El sistema **maneja datos personales**: Sí / No. Si es Sí, aplica la Ley 1581 de 2012 en el numeral 10 de la Nota 1.
 
 ---
 
