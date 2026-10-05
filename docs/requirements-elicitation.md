@@ -21,16 +21,12 @@ Enunciado del **Taller 3**. Se trabaja en clase, por parejas de equipos, y se en
 
 | Campo | Ejemplo *(barbería)* |
 | --- | --- |
-| Quién es | Dueño de la barbería, 15 años con el local |
-| Qué hace en el día a día | Atiende una silla, contesta el teléfono y cierra caja |
-| Cómo se hace hoy | Cuaderno de turnos y llamadas |
-| Relación con la tecnología | Usa WhatsApp; nunca ha usado un computador para el negocio |
+| Quién es | ADMIN. GYM, 2 AÑOS EN EL GYM |
+| Qué hace en el día a día | Atencion al cliente, finanzas, rutinas |
+| Cómo se hace hoy | Cuaderno contable y llamadas, Whatsapp |
+| Relación con la tecnología | Usa WhatsApp y cuaderno; usa un computador para poner musica y responder mensajes pero no para lo contable, ni rutinas |
 
 **Como cliente** *(del dominio del otro equipo)*:
-
-- Leer la ficha de dominio y la tarjeta de personaje del equipo que va a entrevistar.
-- Sostener el personaje toda la ronda *(e.g. "soy la dueña de la papelería, 12 años con el negocio, no uso computador")*.
-- Responder con **problemas y situaciones del día a día**, no con soluciones técnicas. Si no sabe algo, puede inventarlo, siempre que sea verosímil con la tarjeta.
 
 **Como entrevistador** *(del dominio propio)*:
 /////ENTREVISTA DE NUESTRO EQUIPO AL OTRO
@@ -125,21 +121,35 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 
 | ID | Descripción | Prioridad *(MoSCoW)* | Fuente |
 | --- | --- | --- | --- |
-| RF-01 | El sistema debe permitir a los vendedores optimizar y agilizar sus tareas diarias | | P2 |
-| RF-02 | El sistema debe permitir el acceso tanto a usuarios como a administradores/dueños |  | P7 |
-| RF-03 | El sistema debe almacenar la información en la nube | | P8 |
+| RF-01 | El sistema debe permitir consultar la fecha de pago de la mensualidad | | P2 |
+| RF-02 | El sistema debe permitir consultar el estado de la mensualidad.|  | P7 |
+| RF-03 | El sistema debe permitir consultar las rutinas asignadas a cada usuario.| | P8 |
+| RF-04 | El sistema debe permitir asignar rutinas a cada usuario. | | P2 |
+| RF-05 | El sistema debe permitir registrar gastos. | | P2 |
+| RF-06 | El sistema debe permitir registrar ingresos.  | | P2 |
+| RF-07 | El sistema debe permitir visualizar los gastos (libro contable).| | P2 |
+| RF-08 | El sistema debe permitir visualizar los ingresos (libro contable).| | P2 | 
+| RF-09 | El sistema debe generar alertas automáticas de vencimiento de mensualidad. | | P2 |
+| RF-10 | El sistema debe calcular el aforo disponible en tiempo real.| | P2 |
+| RF-11 | El sistema debe reportar los horarios pico según la asistencia confirmada. | | P2 |
+| RF-12 | El sistema debe reportar los días pico según la asistencia confirmada.| | P2 |
+| RF-13 | El sistema debe generar alertas automáticas de vencimiento de mensualidad.| | P2 |
+| RF-14 | El sistema debe calcular la métrica de retención de clientes nuevos. | | P2 |
+| RF-15 | El sistema debe calcular la métrica de retención de clientes antiguos. | | P2 |
+| RF-16 | El sistema debe comparar la retención entre clientes nuevos y antiguos. | | P2 |
+
 
 **Requisitos no funcionales candidatos** *(mínimo 3, con métrica)*:
 
 | ID | Característica *(ISO/IEC 25010)* | Descripción medible | Fuente |
 | --- | --- | --- | --- |
-| RNF-01 | Portabilidad | El sistema debe funcionar en dispositivos móviles y en computador (mixto) | P6 |
+| RNF-01 | Portabilidad | El sistema debe funcionar en computador  | P6 |
 | RNF-02 | Usabilidad | El sistema debe poder ser usado sin necesidad de conocimientos previos de informática, tanto por el usuario como por el dueño | P9 |
 | RNF-03 | Mantenibilidad | El desarrollo sigue metodología en cascada con requerimientos definidos desde el inicio, implementado en Python | P1, P4 |
 
 **Ambigüedades y conflictos detectados** *(lo que hay que aclarar con el cliente del proyecto)*:
 
-- *(completar)*
+- *(Ya se hablo con el cliente, y se revisaron algunos requisitos funcionales y actualizarlos)*
 
 > Todo requisito lleva **fuente**. Un requisito sin pregunta que lo respalde es un requisito inventado por el equipo.
 
@@ -158,8 +168,23 @@ El equipo cliente lee la lista del punto 4 y marca cada requisito:
 **Resultado de la validación:**
 
 | Requisito | Marca | Corrección del cliente |
-|---|---|---|
-| *(completar)* | *(✅ / ✏️ / ❌)* | *(completar)* |
+|consultar la fecha de pago de la mensualidad|✅|lo dije y esta bien entendido|
+|consultar el estado de la mensualidad|✅|lo dije y esta bien entendido|
+|consultar las rutinas asignadas a cada usuario|✅|lo dije y esta bien entendido|
+|asignar rutinas a cada usuario|✅|lo dije y esta bien entendido|
+|registrar gastos|✅|lo dije y esta bien entendido|
+|registrar ingresos|✅|Lo dije y esta bien|
+|visualizar los gastos (libro contable)|✅|Lo dije y esta bien entendido|
+|visualizar los ingresos (libro contable)|✅|Lo dije y esta bien entendido|
+|generar alertas automáticas de vencimiento de mensualidad|✅|Lo dije y esta bien entendido|
+|calcular el aforo disponible en tiempo real|✅|Lo dije y esta bien entendido|
+|reportar los horarios pico según la asistencia confirmada|✅|Lo dije y esta bien entendido|
+|reportar los días pico según la asistencia confirmada|✅|Lo dije y esta bien entendido|
+|generar alertas automáticas de vencimiento de mensualidad|✅|lo dije y esta bien entendido|
+|calcular la métrica de retención de clientes nuevos|✅|Lo dije y esta bien entendido|
+|calcular la métrica de retención de clientes antiguos|✅|lo dije y esta bien entendido|
+|comparar la retención entre clientes nuevos y antiguos|✅|lo dije y esta bien entendido|
+| *()* | *(✅ / ✏️ / ❌)* | *(completar)* |
 
 - Los ❌ no se borran: pasan a **preguntas para el cliente del proyecto**. Pueden ser requisitos válidos que el cliente no mencionó, o suposiciones del equipo.
 
