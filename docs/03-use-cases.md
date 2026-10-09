@@ -130,17 +130,29 @@ Una tabla por caso crítico.
 
 | Requisito | Fuente | Caso de uso |
 | --- | --- | --- |
-| RF-01 | *(P# o documento)* | *(CU-0#)* |
-| … | | |
+| RF-01 (Consultar fecha pago) | P2 | CU-13 |
+| RF-02 (Consultar estado mensualidad) | P7 | CU-13 |
+| RF-03 (Consultar rutinas asignadas) | P8 | CU-08 |
+| RF-04 (Asignar rutinas) | P2 | CU-09 |
+| RF-05 (Registrar gastos) | P2 | *(Ninguno)* |
+| RF-06 (Registrar ingresos) | P2 | CU-05 |
+| RF-07 (Visualizar gastos) | P2 | *(Ninguno)* |
+| RF-08 (Visualizar ingresos) | P2 | CU-12 |
+| RF-09 (Alertas vencimiento) | P2 | CU-11 |
+| RF-10 (Calcular aforo) | P2 | CU-06 (Validar ingreso) |
+| RF-11 (Reportar horarios pico) | P2 | *(Ninguno)* |
+| RF-12 (Reportar días pico) | P2 | *(Ninguno)* |
+| RF-13 (Alertas vencimiento alt.) | P2 | CU-11 |
+| RF-14 (Métrica retención nuevos) | P2 | *(Ninguno)* |
+| RF-15 (Métrica retención antiguos) | P2 | *(Ninguno)* |
+| RF-16 (Comparar retención) | P2 | *(Ninguno)* |
 
 **Huecos detectados:**
 
 | Hueco | Cuál | Qué se hace |
 | --- | --- | --- |
-| RF sin caso de uso | *(completar o "ninguno")* | *(se crea el caso / el RF sale del catálogo)* |
-| Caso de uso sin RF | *(completar o "ninguno")* | *(se agrega el RF / el caso sale del alcance)* |
-
-- Todo lo que cambie el catálogo va al **registro de control de cambios** de la bitácora.
+| RF sin caso de uso | RF-05, RF-07, RF-11, RF-12, RF-14, RF-15, RF-16 | *(Aún está por completar)* |
+| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-06 (Clases/Comprobante), CU-07, CU-10 | *(Aún está por completar)* |
 
 ---
 
