@@ -1,1 +1,6 @@
 #para guadra cambios en este archivo
+CU05 ya no tiene actor secundario. Los pasos 4 y 5 del flujo (envío y confirmación de la pasarela) se reemplazan por "El administrador confirma el monto y el medio de pago".
+ El flujo alterno de pago rechazado desaparece.
+CU13: en el diagrama lo inicia el Administrador. Si quieren que se envíe automáticamente cada día, el disparador sería el propio sistema y el SMS quedaría solo como actor secundario. Eso es una decisión para hablar con el cliente.
+RNF que cambian: el requisito de la pasarela se elimina y aparece uno nuevo, "los SMS se envían al menos 3 días antes del vencimiento".
+Un solo actor concentra casi todo. Para un proyecto de 5 semanas es razonable, pero si el gimnasio tiene recepcionista o entrenadores, hay que separarlos después.

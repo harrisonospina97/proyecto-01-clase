@@ -135,6 +135,7 @@ Un solo diagrama con:
 
 **3. Diagrama** *(extracto en PlantUML)*
 
-![img01](/docs/diagrams/img-01.png)
+    ![img01](/docs/diagrams/img-01.png)
+    
 
 **4. Trazabilidad:** RF-01 → CU-01 Reservar turno → Cliente, Turno, Barbero. RF-02 → CU-02 Marcar no asistido → Turno *(estado)*.
