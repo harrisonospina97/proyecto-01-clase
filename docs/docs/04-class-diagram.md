@@ -97,7 +97,7 @@ Un solo diagrama con:
 
 **Imagen del diagrama de clases:**
 
-![Diagrama de Clases](./diagram/diagrama-clases.png)
+![Diagrama de Clases](/docs/diagrams/diagrama-clases.png)
 
 
 
