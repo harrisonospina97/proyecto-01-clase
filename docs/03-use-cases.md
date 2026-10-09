@@ -4,7 +4,7 @@ Se trabaja en clase, por equipo.
 
 - **Entrega:** en el **repositorio del equipo en GitHub**, diligenciando el enunciado con los puntos 1 a 5 y subiendo el diagrama al repositorio *(imagen exportada o fuente PlantUML/draw.io)*.
 - Herramienta: draw.io, PlantUML, StarUML o Visual Paradigm.
-![img](/docs/diagram/diagrama01.png)
+
 ---
 
 ## 1. Actores y casos
@@ -64,6 +64,8 @@ Un solo diagrama con:
 
 **Imagen o enlace al diagrama:** <<link>>
 
+![img](/docs/diagram/diagrama01.png)
+
 **Justificación de las relaciones:**
 
 - *(completar)*
@@ -76,34 +78,39 @@ Los tres casos que el prototipo implementa **de punta a punta** *(de la interfaz
 
 | Caso      | Por qué es crítico *(valor / frecuencia / riesgo técnico)* |
 | --------- | ---------------------------------------------------------- |
-| *(CU-0#)* | *(completar)*                                              |
-| *(CU-0#)* | *(completar)*                                              |
-| *(CU-0#)* | *(completar)*                                              |
+| *(CU-01#- confirmar asistencia)* | *(problema que tenemos: es que no se sabe el aforo de personas, por lo tanto no se saben la horas pico ni cuando esta mas lleno el gym. Riesgo: no hay espacio ni maquinas disponibles para uso)*                                              |
+| *(CU-02#- registrar pago membresía)* | *(Problema que tenemos: es que no se puede registrar el pago de la membresía sin un método de pago claro.  Riesgo: posible fraude o error en caja)* 
+                                             |
+| *(CU-03#- consultar membresía)* | *(Problema que tenemos: es que no se puede consultar la información de la membresía de manera efectiva o rapida.  Riesgo: posible acceso no autorizado a información privada)*     
+
+|*(CU-04#- Retencion de clientes)* | *(Problema que tenemos: es que no se puede retener a los clientes de manera efectiva.  Riesgo: posible perdida de clientes y disminución de ingresos)*
 
 - **Máximo uno** puede ser el caso de IA; los otros dos son funcionalidad con persistencia propia.
 - No valen iniciar sesión.
 
 ---
 
-## 4. Descripción detallada de los casos críticos
+    ## 4. Descripción detallada de los casos críticos
 
 Una tabla por caso crítico.
 
 | Campo                    | Contenido                                                    |
 | ------------------------ | ------------------------------------------------------------ |
-| **ID y nombre**          | *(completar)*                                                |
-| **Actor principal**      | *(completar)*                                                |
-| **Actores secundarios**  | *(completar o —)*                                            |
-| **Requisitos que cubre** | *(RF-0#, RNF-0#)*                                            |
-| **Precondiciones**       | *(completar)*                                                |
-| **Disparador**           | *(completar)*                                                |
-| **Frecuencia**           | *(completar, con la fuente del Taller 3 o de la entrevista)* |
+| **ID y nombre**          | *(Administrador)*                                                |
+| **Actor principal**      | *(Dueño/Administrador)*                                                |
+| **Actores secundarios**  | *(coach, Miembros)*                                            |
+| **Requisitos que cubre** | *(RF-10#, RF-13#)*                                            |
+| **Precondiciones**       | *(hay reservas de clases personalizadas, consultar aforo disponible)*                                                |
+| **Disparador**           | *(Diariamente no se sabe el aforo disponible real, el dueño o administrador debe actualizar la asistencia a clases de manera manual)*                                                |
+| **Frecuencia**           | *(diariamente)* |
 
 **Flujo principal**
 
-1. *(El actor…)*
-2. *(El sistema…)*
-3. …
+1. *(El administrador debe revisar el libro de asistencia a clases)*
+2. *(El administrador debe actualizar la información de aforo disponible en el sistema)*
+3. *(El sistema debe actualizar la información de aforo disponible )*
+4. *(El sistema debe mostrar las clases disponibles por semana y por hora)*
+5. *(El sistema debe mostrar la confirmacion de la asistencia a clases)*
 
 **Flujos alternos** *(se logra el objetivo por otro camino)*
 
@@ -130,77 +137,22 @@ Una tabla por caso crítico.
 
 | Requisito | Fuente | Caso de uso |
 | --- | --- | --- |
-| RF-01 | *(P# o documento)* | *(CU-0#)* |
-| … | | |
+| RF-01 (Consultar fecha pago) | P2 | CU-13 |
+| RF-02 (Consultar estado mensualidad) | P7 | CU-13 |
+| RF-03 (Consultar rutinas asignadas) | P8 | CU-08 |
+| RF-04 (Asignar rutinas) | P2 | CU-09 |
+| RF-06 (Registrar ingresos) | P2 | CU-05 |
+| RF-08 (Visualizar ingresos) | P2 | CU-12 |
+| RF-09 (Alertas vencimiento) | P2 | CU-11 |
+| RF-10 (Calcular aforo) | P2 | CU-06 (Validar ingreso) |
+| RF-13 (Alertas vencimiento alt.) | P2 | CU-11 |
 
 **Huecos detectados:**
 
 | Hueco | Cuál | Qué se hace |
 | --- | --- | --- |
-| RF sin caso de uso | *(completar o "ninguno")* | *(se crea el caso / el RF sale del catálogo)* |
-| Caso de uso sin RF | *(completar o "ninguno")* | *(se agrega el RF / el caso sale del alcance)* |
-
-- Todo lo que cambie el catálogo va al **registro de control de cambios** de la bitácora.
+| RF sin caso de uso | RF-05, RF-07, RF-11, RF-12, RF-14, RF-15, RF-16 | Se decidió sacar estos requisitos del alcance del proyecto (se eliminarán del catálogo) ya que no son urgentes para esta primera versión, permitiendo al equipo enfocarse en el núcleo del sistema. |
+| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-06 (Clases/Comprobante), CU-07, CU-10 | Se añadirán estos requisitos funcionales al catálogo original, dejando constancia en el registro de control de cambios, ya que son indispensables para el flujo del sistema. |
 
 ---
 
-## Ejemplo diligenciado
-
-Referencia de nivel de detalle. Mismo dominio de los talleres anteriores: **no se puede usar.**
-
-**1. Actores** *(barbería; extracto)*
-
-| Actor | Tipo | Principal o secundario | Objetivo |
-| --- | --- | --- | --- |
-| Cliente | Humano | Principal | Conseguir un turno sin llamar |
-| Barbero | Humano | Principal | Saber a quién atiende y registrar quién no llegó |
-| Dueño | Humano *(hereda de Barbero)* | Principal | Cerrar caja y mantener la clientela |
-| Proveedor de IA | Sistema externo | Secundario | Redactar el texto del recordatorio |
-
-**1. Casos** *(extracto)*
-
-| ID | Nombre | Actor principal | RF |
-| --- | --- | --- | --- |
-| CU-01 | Reservar turno | Cliente | RF-01 |
-| CU-02 | Consultar franjas libres | Cliente | RF-01 |
-| CU-03 | Cancelar turno | Cliente | RF-04 |
-| CU-05 | Marcar turno no asistido | Barbero | RF-02 |
-| CU-06 | Cerrar caja del día | Dueño | RF-05 |
-| CU-07 | Redactar recordatorio con IA | Dueño | RF-08 |
-
-**2. Relaciones:** CU-01 `«include»` CU-02, porque toda reserva pasa por consultar las franjas y el cliente también las consulta sin reservar. Dueño hereda de Barbero, porque el dueño también atiende una silla.
-
-**3. Críticos**
-
-| Caso                               | Por qué                                                                                                                |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| CU-01 Reservar turno               | Es el problema que se tiene es: el teléfono no para los sábados; ~40 al día; riesgo de dos reservas en la misma franja |
-| CU-06 Cerrar caja del día          | Todos los días; cálculo sobre los turnos atendidos                                                                     |
-| CU-07 Redactar recordatorio con IA | El caso de IA; reduce los no asistidos *(P6)*                                                                          |
-
-**4. Descripción** *(CU-07; CU-01 está completo en la Sesión 5)*
-
-| Campo | Contenido |
-| --- | --- |
-| **Actor principal** | Dueño |
-| **Actores secundarios** | Proveedor de IA |
-| **Requisitos** | RF-08, RNF-04 *(respuesta en menos de 10 s)* |
-| **Precondiciones** | Hay turnos *Reservados* para el día siguiente |
-| **Disparador** | El dueño prepara los recordatorios al cierre del día |
-| **Frecuencia** | Una vez al día |
-
-1. El dueño pide los recordatorios del día siguiente.
-2. El sistema lista los turnos *Reservados* de mañana.
-3. El sistema envía al proveedor de IA la franja, el barbero y el nombre de pila de cada cliente, **sin teléfono**.
-4. El proveedor devuelve un borrador de mensaje por turno.
-5. El sistema valida que cada borrador traiga fecha y franja, y los muestra marcados como *texto generado*.
-6. El dueño revisa, edita si quiere y aprueba.
-7. El sistema guarda los mensajes aprobados listos para enviar.
-
-- **5a.** Un borrador no trae fecha o franja: se descarta y se usa la plantilla fija para ese turno. Vuelve al paso 6.
-- **6a.** El dueño descarta un borrador: el sistema usa la plantilla fija para ese turno. Vuelve al paso 6.
-- **4a.** *(excepción)* El proveedor no responde en 10 s o devuelve HTTP 429: el sistema informa que la IA no está disponible, registra el evento y ofrece la plantilla fija para todos. El caso termina sin texto generado.
-
-**Postcondiciones.** Éxito: cada turno de mañana tiene un mensaje aprobado. Garantía mínima: ningún dato de contacto sale hacia el proveedor.
-
-**5. Huecos:** RF-06 *(reporte mensual de ingresos)* sin caso → se crea CU-09 Consultar reporte mensual. CU-04 Avisar a la lista de espera sin RF → se agrega RF-11 y se registra en el control de cambios.
