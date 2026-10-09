@@ -134,25 +134,18 @@ Una tabla por caso crítico.
 | RF-02 (Consultar estado mensualidad) | P7 | CU-13 |
 | RF-03 (Consultar rutinas asignadas) | P8 | CU-08 |
 | RF-04 (Asignar rutinas) | P2 | CU-09 |
-| RF-05 (Registrar gastos) | P2 | *(Ninguno)* |
 | RF-06 (Registrar ingresos) | P2 | CU-05 |
-| RF-07 (Visualizar gastos) | P2 | *(Ninguno)* |
 | RF-08 (Visualizar ingresos) | P2 | CU-12 |
 | RF-09 (Alertas vencimiento) | P2 | CU-11 |
 | RF-10 (Calcular aforo) | P2 | CU-06 (Validar ingreso) |
-| RF-11 (Reportar horarios pico) | P2 | *(Ninguno)* |
-| RF-12 (Reportar días pico) | P2 | *(Ninguno)* |
 | RF-13 (Alertas vencimiento alt.) | P2 | CU-11 |
-| RF-14 (Métrica retención nuevos) | P2 | *(Ninguno)* |
-| RF-15 (Métrica retención antiguos) | P2 | *(Ninguno)* |
-| RF-16 (Comparar retención) | P2 | *(Ninguno)* |
 
 **Huecos detectados:**
 
 | Hueco | Cuál | Qué se hace |
 | --- | --- | --- |
-| RF sin caso de uso | RF-05, RF-07, RF-11, RF-12, RF-14, RF-15, RF-16 | *(Aún está por completar)* |
-| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-06 (Clases/Comprobante), CU-07, CU-10 | *(Aún está por completar)* |
+| RF sin caso de uso | RF-05, RF-07, RF-11, RF-12, RF-14, RF-15, RF-16 | Se decidió sacar estos requisitos del alcance del proyecto (se eliminarán del catálogo) ya que no son urgentes para esta primera versión, permitiendo al equipo enfocarse en el núcleo del sistema. |
+| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-06 (Clases/Comprobante), CU-07, CU-10 | Se añadirán estos requisitos funcionales al catálogo original, dejando constancia en el registro de control de cambios, ya que son indispensables para el flujo del sistema. |
 
 ---
 
