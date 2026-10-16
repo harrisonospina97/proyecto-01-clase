@@ -26,29 +26,35 @@ Se trabaja en clase, por equipo.
 
 | ID    | Nombre *(verbo en infinitivo + objeto)* | Actor principal | RF que cubre |
 | ----- | --------------------------------------- | --------------- | ------------ |
-| CU-01 | *(Iniciar sesión)*                      | *(	Miembro, Administrador)*   | *(RF02)*    |
+| CU-01 | *(Iniciar sesión)*                      | *(	Miembro, Administrador)*   | *(----)*    |
 | …     |                                         |                 |              |
 | CU-02 | *(Registrar miembro)*                      | *(	Administrador)*   |      *(RF01)*    |
 | …     |                                         |                 |              |
-| CU-03 | *(Aceptar tratamiento de datos)*        | *(	Miembro )*             |   |  *(RF01)*    |
+| CU-03 | *(Aceptar tratamiento de datos)*        | *(	Miembro )*             |   |  *(RF)*   |
 | …     |                                         |                 |              |
 | CU-04 | *(Gestionar planes de membresía)*       | *(	Administrador)*            | *(RF03)*    |
 | …     |                                         |                 |              |
-| CU-05 | *(Registrar pago de membresía)*         | *(Administrador)*              | *(RF04)*    |
+| CU-05 | *(Registrar pago de membresía)*         | *(Administrador)*              | *(RF)*    |
 | …     |                                         |                 |              |
 | CU-06 | *(Emitir comprobante)*                  | *(Administrador)*              | *(RF04)*    |
 | …     |                                         |                 |              |
-| CU-06 | *(Validar ingreso)*                     | *(Administrador)*              | *(RF05)*    |
+| CU-07 | *(Validar ingreso)*                     | *(Administrador)*              | *(RF05)*    |
+| …     |                                         |                 |              |             |
+| CU-08 | *(Reservar clase grupal)*               | *(Miembro)*                    | *(RF06)*    |(<<include>> Consultar clases) 
 | …     |                                         |                 |              |
-| CU-06 | *(Reservar clase grupal)*               | *(Miembro)*                    | *(RF06)*    |(<<include>> Consultar clases) 
-| …     |                                         |                 |              |
-| CU-07 | *(Cancelar reserva clase grupal)*       | *(Miembro)*     |              | *(RF07)*    |(	<<extend>> Avisar a lista/clase)
-| CU-08 | *(Consultar rutina)*                    | *(Miembro)*     |              | *(RF08)*    |
-| CU-09 | *(Asignar rutina)*                      | *(Administrador)*|             | *(RF07)*    |
-| CU-10 | *(Registrar evolución física)*          | *(Administrador)*|             | *(RF08)*    |
-| CU-11 | *(Enviar recordatorio de vencimiento)*  | *(Administrador)*|             | *(RF09)*    |
-| CU-12 | *(Generar reporte de ingresos y asistencia)*| *(Administrador)*|         | *(RF10)*    |
-| CU-13 | *(Consultar membresía)*                 | *(Miembro)*|                   | *(	RF04/RF05)*|
+| CU-09 | *(Cancelar reserva clase grupal)*       | *(Miembro)*     |              | *(RF07)*    |(	<<extend>> Avisar a lista/clase)
+|       |                                         |                 |              |             |
+| CU-10 | *(Consultar rutina)*                    | *(Miembro)*     |              | *(RF03)*    |
+| …     |                                         |                 |              |             |
+| CU-11 | *(Asignar rutina)*                      | *(Administrador)*|             | *(RF04)*    |
+| …     |                                         |                 |              |             |
+| CU-12 | *(Registrar evolución física)*          | *(Administrador)*|             | *(RF)*    |
+| …     |                                         |                 |              |             |
+| CU-13 | *(Enviar recordatorio de vencimiento)*  | *(Administrador)*|             | *(RF09)*    |
+| …     |                                         |                 |              |             |
+| CU-14 | *(Generar reporte de ingresos y asistencia)*| *(Administrador)*|         | *(RF10)*    |
+| …     |                                         |                 |              |             |
+| CU-15 | *(Consultar membresía)*                 | *(Miembro)*|                   | *(	RF04/RF05)*|
 
 - **Mínimo 6 casos**, todos con al menos un RF.
 
