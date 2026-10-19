@@ -139,26 +139,27 @@ Una tabla por caso crítico.
 
 ## 5. Trazabilidad
 
-**Columna de caso de uso de la matriz** *(la que se abrió en la Clase 3)*:
+*Columna de caso de uso de la matriz* (la que se abrió en la Clase 3):
 
 | Requisito | Fuente | Caso de uso |
 | --- | --- | --- |
-| RF-01 (Consultar fecha pago) | P2 | CU-13 |
-| RF-02 (Consultar estado mensualidad) | P7 | CU-13 |
-| RF-03 (Consultar rutinas asignadas) | P8 | CU-08 |
-| RF-04 (Asignar rutinas) | P2 | CU-09 |
-| RF-06 (Registrar ingresos) | P2 | CU-05 |
-| RF-08 (Visualizar ingresos) | P2 | CU-12 |
-| RF-09 (Alertas vencimiento) | P2 | CU-11 |
-| RF-10 (Calcular aforo) | P2 | CU-06 (Validar ingreso) |
-| RF-13 (Alertas vencimiento alt.) | P2 | CU-11 |
+| RF-01 (Consultar fecha pago) | P2 | CU-15 |
+| RF-02 (Consultar estado mensualidad) | P7 | CU-15 |
+| RF-03 (Consultar rutinas asignadas) | P8 | CU-10 |
+| RF-04 (Asignar rutinas) | P2 | CU-11, CU-16, CU-17 |
+| RF-06 (Registrar ingresos) | P2 | CU-05, CU-06 |
+| RF-08 (Visualizar ingresos) | P2 | CU-14 |
+| RF-09 (Alertas vencimiento) | P2 | CU-13 |
+| RF-10 (Calcular aforo) | P2 | CU-07 |
+| RF-11 (Reportar horarios pico) | P2 | CU-14 |
+| RF-13 (Alertas vencimiento alt.) | P2 | CU-13 |
 
-**Huecos detectados:**
+*Huecos detectados:*
 
 | Hueco | Cuál | Qué se hace |
 | --- | --- | --- |
-| RF sin caso de uso | RF-05, RF-07, RF-11, RF-12, RF-14, RF-15, RF-16 | Se decidió sacar estos requisitos del alcance del proyecto (se eliminarán del catálogo) ya que no son urgentes para esta primera versión, permitiendo al equipo enfocarse en el núcleo del sistema. |
-| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-06 (Clases/Comprobante), CU-07, CU-10 | Se añadirán estos requisitos funcionales al catálogo original, dejando constancia en el registro de control de cambios, ya que son indispensables para el flujo del sistema. |
+| RF sin caso de uso | RF-05, RF-07, RF-12, RF-14, RF-15, RF-16 | Se decidió sacar estos requisitos del alcance del proyecto (se eliminarán del catálogo) ya que no son urgentes para esta primera versión, permitiendo al equipo enfocarse en el núcleo del sistema. |
+| Caso de uso sin RF explícito | CU-01, CU-02, CU-03, CU-04, CU-08, CU-09, CU-12 | Se añadirán estos requisitos funcionales al catálogo original, dejando constancia en el registro de control de cambios, ya que son indispensables para el flujo del sistema. |
 
 ---
 
