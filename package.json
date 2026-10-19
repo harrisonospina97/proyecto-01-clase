@@ -1,0 +1,17 @@
+{
+  "name": "gimnasio",
+  "version": "1.0.0",
+  "description": "Sistema de consola en Node.js para gestion de gimnasio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "poo",
+    "gimnasio",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Equipo del Proyecto",
+  "license": "ISC"
+}
