@@ -1,13 +1,13 @@
 {
   "name": "gimnasio",
   "version": "1.0.0",
-  "description": "Sistema de consola en Node.js para gestion de gimnasio",
+  "description": "Sistema de gestion de gimnasio en JavaScript y Node.js con arquitectura MVC",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [
-    "poo",
+    "mvc",
     "gimnasio",
     "javascript",
     "nodejs"

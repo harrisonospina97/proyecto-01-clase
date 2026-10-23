@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Gimnasio</title>
+  <!-- Estilos dentro de la Vista (V) respetando MVC -->
+  <link rel="stylesheet" href="src/views/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Sistema de Gestión de Gimnasio</h1>
+    <button id="btn-salir" class="btn btn-ghost oculto" data-action="salir">Cerrar sesión</button>
+  </header>
+
+  <main id="app"></main>
+  <div id="toast" class="toast oculto"></div>
+
+  <!-- MODELOS (M) - Lógica de datos y reglas del gimnasio -->
+  <script src="src/models/store.js"></script>
+  <script src="src/models/ClienteModel.js"></script>
+  <script src="src/models/PlanModel.js"></script>
+  <script src="src/models/AsistenciaModel.js"></script>
+  <script src="src/models/RutinaModel.js"></script>
+  <script src="src/models/ClaseModel.js"></script>
+  <script src="src/models/EvolucionModel.js"></script>
+
+  <!-- VISTAS (V) - Generación de pantallas HTML -->
+  <script src="src/views/Vista.js"></script>
+  <script src="src/views/VistaAdmin.js"></script>
+  <script src="src/views/VistaEntrenador.js"></script>
+  <script src="src/views/VistaCliente.js"></script>
+
+  <!-- CONTROLADOR (C) - Manejo de clics, formularios y navegación -->
+  <script src="src/controllers/Controlador.js"></script>
+  <script>
+    Controlador.init();
+  </script>
+</body>
+</html>
